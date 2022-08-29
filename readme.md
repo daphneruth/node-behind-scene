@@ -34,7 +34,12 @@ WritableStream functions :write(),
 end()
 ```
 
-### DuplexStream
+### DuplexSteam
 
 - Streams that are both writable and readable.
 - Example:net web socket.
+
+### TransformStream
+
+- Duplex Streams that transform data as it is written or read.
+- Example:zlib Gzip creation.
