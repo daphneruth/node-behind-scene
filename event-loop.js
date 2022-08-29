@@ -12,5 +12,9 @@ fs.readFile("test-file.txt", "utf8", () => {
   setTimeout(() => console.log("timer 3 finished"), 3000);
 
   process.nextTick(() => console.log("process.nextTick finished"));
+
+  crypto.pbkdf2("password", "salt", 100000, 1024, "sha512", () => {
+    console.log("password encrypted");
+  });
 });
 console.log("top level code finished");
