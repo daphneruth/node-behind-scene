@@ -18,5 +18,14 @@ fs.readFile("test-file.txt", "utf8", () => {
   crypto.pbkdf2("password", "salt", 100000, 1024, "sha512", () => {
     console.log(Date.now() - start, "password encrypted");
   });
+  crypto.pbkdf2("password", "salt", 100000, 1024, "sha512", () => {
+    console.log(Date.now() - start, "password encrypted");
+  });
+  crypto.pbkdf2("password", "salt", 100000, 1024, "sha512", () => {
+    console.log(Date.now() - start, "password encrypted");
+  });
+  crypto.pbkdf2("password", "salt", 100000, 1024, "sha512", () => {
+    console.log(Date.now() - start, "password encrypted");
+  });
 });
 console.log("top level code finished");
