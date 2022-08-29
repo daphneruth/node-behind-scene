@@ -4,5 +4,8 @@ setImmediate(() => console.log("immediate 1 finished"));
 
 fs.readFile("test-file.txt", "utf8", () => {
   console.log("I/O finished");
+  setTimeout(() => console.log("timer 2 finished"), 0);
+  setImmediate(() => console.log("immediate 2 finished"));
+  setTimeout(() => console.log("timer 2 finished"), 3000);
 });
 console.log("top level code finished");
