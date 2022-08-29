@@ -1,4 +1,5 @@
 const fs = require("fs");
+const crypto = require("crypto");
 
 setTimeout(() => console.log("timer 1 finished"), 0);
 setImmediate(() => console.log("immediate 1 finished"));
