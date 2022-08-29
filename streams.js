@@ -9,6 +9,12 @@ server.on("request", (req, res) => {
 
   ///Using Stream
   const readable = fs.createReadStream("test-file.txt");
+  readable.on("data", (chunk) => {
+    res.write(chunk);
+  });
+  readable.on("end", () => {
+    res.end();
+  });
 });
 server.listen(8000, "127.0.0.1", () => {
   console.log("listening...");
