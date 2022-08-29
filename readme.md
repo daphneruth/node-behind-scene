@@ -5,9 +5,36 @@
 - perfect for handling large volumes of data for example videos.
 - more efficient data processing in terms of memory and time.
 
-### Types of Streams.
+## Types of Streams.
 
 - ReadableStream
 - WritableStream
 - DuplexStream
 - TransformStream
+
+### ReadableStream
+
+- Streams from which we can read data from.
+- Examples: http request and fs read statements.
+
+```ReadableStream events : data,
+end.
+ReadableStream functions :pipe(),
+read()
+```
+
+### WritableStream
+
+- Streams from which we can write data.
+- Examples: http response and fs write statements.
+
+```WritableStream events : drain,
+finish.
+WritableStream functions :write(),
+end()
+```
+
+### DuplexStream
+
+- Streams that are both writable and readable.
+- Example:net web socket.
