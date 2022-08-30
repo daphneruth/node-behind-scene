@@ -45,3 +45,10 @@ end()
 - Example:zlib Gzip creation.
 
 # Requiring a modules
+
+- steps :
+- Resolving and loading
+- wrapping
+- execution
+- returning reports
+- caching
