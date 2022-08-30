@@ -58,3 +58,17 @@ end()
 - core modules
 - developer modules
 - third party modules
+
+### wrapping
+
+- example:
+  ` functions exports,request,modules,__filename,__dirname`.
+- wrapper arquiments :
+
+```
+- require  : function to modules.
+- modules : reference to the  current modules
+- exports : export   obect from module
+__filename :absolute path of the current module's file
+__dirname : directory name of the current module
+```
