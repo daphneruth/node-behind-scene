@@ -52,3 +52,9 @@ end()
 - execution
 - returning reports
 - caching
+
+## Types of modules
+
+- core modules
+- developer modules
+- third party modules
