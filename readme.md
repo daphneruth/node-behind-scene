@@ -62,8 +62,7 @@ end()
 ### wrapping
 
 - example:
-  ` functions exports,request,modules,__filename,__dirname`.
-- wrapper arquiments :
+  ` functions exports,request,modules,__filename,__dirname`
 
 ```
 - require  : function to modules.
@@ -71,4 +70,12 @@ end()
 - exports : export   obect from module
 __filename :absolute path of the current module's file
 __dirname : directory name of the current module
+
 ```
+
+### Returning Exports
+
+- require function returns exports of the required module
+- module.exports is th returned object
+- module.exports is used to export one single variable
+- export is used to exportmultiple named variables.
